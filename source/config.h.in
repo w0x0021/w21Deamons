@@ -1,0 +1,57 @@
+/*************************************************************************
+ *
+ *    Copyright (c) 2020 by WangSansan All rights reserved.
+ *    
+ *    Filename: config.h
+ *    Author：WangSansan
+ *    Email: w0x0021@gmail.com
+ *    Site: https://www.wangsansan.com
+ *    Date: Tue 26 May 2020 10:38:54 AM CST
+ *    
+ *    Description：
+ *          This file contains some information configuration of 
+ *          the application.
+ *    
+ *************************************************************************/
+
+#ifndef __CONFIG_H__
+#define __CONFIG_H__
+#pragma onece
+
+// 应用信息
+#define __AUTHOR_NAME__             "WangSansan"                        // 作者署名
+#define __AUTHOR_EMAIL__            "w0x0021@gmail.com"                 // 作者邮箱
+#define __AUTHOR_BLOG__             "https://www.wangsansan.com"        // 博客地址
+#define __APPLICTION_NAME__         "@GLOB_PRONAME@"                    // 程序名称
+#define __PRODUCT_NAME__            "A simple framework of Daemons"     // 程序简介
+#define __COPYRIGHT_INFORMATION__   "Copyright (c) " __AUTHOR_NAME__ ".Co.Ltd. All rights reserved."         // 版权信息
+#define __PRODUCT_DESCRIPTION__     __PRODUCT_NAME__ " by " __AUTHOR_NAME__ "."      // 描述
+
+#ifndef _DEBUG
+#define __APPLICTION_VERSION__  "@APP_VERSION_MAJOR@.@APP_VERSION_MINOR@"            // Realease版本号
+#else
+#define __APPLICTION_VERSION__  "@APP_VERSION_MAJOR@.@APP_VERSION_MINOR@D"          // Debug版本号
+#endif
+
+#define __COMPILE_TIME__        __DATE__ " at " __TIME__         // 编译时间
+
+#define __APPLICTION_NAME_V__   __APPLICTION_NAME__ " v" __APPLICTION_VERSION__
+#define __PRINT_WELCOME__                                                           \
+    "\n"                                                                            \
+    "*************************************************************** \n"            \
+    "*                                                             * \n"            \
+    "*    " __COPYRIGHT_INFORMATION__ "    * \n"                                    \
+    "*                                                             * \n"            \
+    "*    Project: " __APPLICTION_NAME_V__ "                                * \n"   \
+    "*    Author: " __AUTHOR_NAME__ "                                       * \n"   \
+    "*    Email: " __AUTHOR_EMAIL__ "                                 * \n"         \
+    "*    Site: " __AUTHOR_BLOG__ "                         * \n"                   \
+    "*    Date: Sat 22 Aug 2020 11:42:49 AM CST                    * \n"            \
+    "*                                                             * \n"            \
+    "*    Description：                                            * \n"            \
+    "*        " __PRODUCT_DESCRIPTION__ "         * \n"                             \
+    "*                                                             * \n"            \
+    "*************************************************************** \n"            \
+    "\n"
+
+#endif
